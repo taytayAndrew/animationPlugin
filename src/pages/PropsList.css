@@ -1,0 +1,10 @@
+.props-list { display: flex; flex-direction: column; gap: var(--space-md); }
+.props-toolbar { display: flex; align-items: center; justify-content: space-between; gap: var(--space-md); flex-wrap: wrap; }
+.props-filters { display: flex; gap: 4px; }
+.props-filters .btn-ghost.active { color: var(--accent-primary); border-color: var(--accent-primary); }
+.props-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--space-md); }
+.prop-card { padding: var(--space-md); display: flex; flex-direction: column; gap: var(--space-sm); }
+.prop-header { display: flex; align-items: center; gap: var(--space-sm); }
+.prop-name { font-weight: 600; }
+.prop-meta { display: flex; gap: var(--space-sm); }
+.prop-meta .select-sm { flex: 1; }

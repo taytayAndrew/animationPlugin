@@ -1,0 +1,61 @@
+:root {
+  /* 背景层 */
+  --bg-primary: #0F0F1A;
+  --bg-card: #1A1A2E;
+  --bg-elevated: #252540;
+  --bg-hover: #2A2A45;
+  --bg-input: #16162B;
+
+  /* 强调色 */
+  --accent-primary: #7C5CFC;
+  --accent-primary-hover: #6B4AEB;
+  --accent-primary-glow: rgba(124, 92, 252, 0.15);
+  --accent-secondary: #FF6B9D;
+  --accent-success: #4ECDC4;
+  --accent-warning: #FFD93D;
+  --accent-danger: #FF5757;
+
+  /* 文字 */
+  --text-primary: #E8E8F0;
+  --text-secondary: #8888AA;
+  --text-placeholder: #555570;
+  --text-inverse: #0F0F1A;
+
+  /* 边框 */
+  --border-default: rgba(136, 136, 170, 0.15);
+  --border-hover: rgba(136, 136, 170, 0.3);
+  --border-focus: var(--accent-primary);
+
+  /* 圆角 */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+
+  /* 阴影 */
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.3);
+  --shadow-elevated: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 20px var(--accent-primary-glow);
+
+  /* 毛玻璃 */
+  --glass-bg: rgba(26, 26, 46, 0.7);
+  --glass-blur: blur(12px);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+
+  /* 间距 */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+
+  /* 动效 */
+  --transition-fast: 150ms ease-out;
+  --transition-normal: 200ms ease-out;
+  --transition-slow: 300ms ease-out;
+
+  /* 字体 */
+  --font-sans: 'Inter', 'Noto Sans SC', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}

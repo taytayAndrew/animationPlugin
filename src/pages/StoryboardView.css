@@ -1,0 +1,122 @@
+.storyboard-view {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.storyboard-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.shot-count {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.shots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+
+.shot-card {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.shot-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--bg-elevated);
+}
+.shot-number {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  color: var(--accent-primary);
+}
+.shot-delete { opacity: 0; }
+.shot-card:hover .shot-delete { opacity: 1; }
+
+.shot-image-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  height: 160px;
+  margin: var(--space-md);
+  border: 2px dashed var(--border-default);
+  border-radius: var(--radius-sm);
+  color: var(--text-placeholder);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  overflow: hidden;
+  position: relative;
+}
+.shot-image-area:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+  background: var(--accent-primary-glow);
+}
+.shot-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.shot-image-area:has(.shot-image) {
+  border-style: solid;
+  border-color: transparent;
+}
+.shot-image-area:has(.shot-image):hover {
+  opacity: 0.85;
+}
+
+.shot-meta {
+  padding: 0 var(--space-md);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xs);
+}
+.meta-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: 12px;
+}
+.meta-row label {
+  color: var(--text-secondary);
+  min-width: 32px;
+  font-size: 11px;
+}
+.select-xs {
+  padding: 2px 6px;
+  font-size: 12px;
+  flex: 1;
+  min-width: 0;
+  background: var(--bg-input);
+  color: var(--text-primary);
+}
+.unit {
+  font-size: 11px;
+  color: var(--text-placeholder);
+}
+
+.shot-fields {
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+.shot-textarea {
+  min-height: 32px;
+  font-size: 12px;
+  padding: var(--space-sm);
+  resize: none;
+}

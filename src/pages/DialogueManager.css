@@ -1,0 +1,10 @@
+.dialogue-manager { display: flex; flex-direction: column; gap: var(--space-md); }
+.dialogue-toolbar { display: flex; align-items: center; gap: var(--space-md); }
+.dialogue-count { font-size: 13px; color: var(--text-secondary); margin-right: auto; }
+.dialogue-list { display: flex; flex-direction: column; gap: var(--space-sm); }
+.dialogue-item { padding: var(--space-md); }
+.dialogue-meta { display: flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-sm); }
+.char-select { max-width: 140px; }
+.emotion-select { max-width: 100px; }
+.dialogue-content { min-height: 48px; font-size: 14px; }
+.empty-state { display: flex; flex-direction: column; align-items: center; gap: var(--space-sm); padding: var(--space-xl) 0; color: var(--text-placeholder); }

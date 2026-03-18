@@ -1,0 +1,10 @@
+.dev-log { display: flex; flex-direction: column; gap: var(--space-md); }
+.devlog-toolbar { display: flex; align-items: center; justify-content: space-between; }
+.devlog-count { font-size: 13px; color: var(--text-secondary); }
+.devlog-list { display: flex; flex-direction: column; gap: var(--space-md); }
+.devlog-entry { padding: var(--space-md); }
+.devlog-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-md); }
+.devlog-date { max-width: 160px; font-weight: 600; }
+.devlog-fields { display: flex; flex-direction: column; gap: var(--space-md); }
+.devlog-field { display: flex; flex-direction: column; gap: var(--space-xs); }
+.devlog-label { font-size: 13px; font-weight: 500; color: var(--text-secondary); }

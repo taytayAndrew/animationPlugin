@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "AnimStudio - 动画短片创作助手",
+  "version": "1.0.0",
+  "description": "辅助动画短片创作的浏览器插件，支持AI对话抓取、故事管理、制作流程看板",
+  "permissions": ["activeTab", "storage", "contextMenus", "tabs"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"],
+      "css": ["content-style.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

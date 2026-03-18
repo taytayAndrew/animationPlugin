@@ -1,0 +1,77 @@
+.notes-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.notes-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.notes-count {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-md);
+}
+
+.note-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border-top: 3px solid;
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  min-height: 160px;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-card);
+}
+.note-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-elevated);
+}
+
+.note-textarea {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.6;
+  resize: none;
+  outline: none;
+}
+
+.note-footer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--border-default);
+}
+.note-date {
+  font-size: 11px;
+  color: var(--text-placeholder);
+  flex: 1;
+}
+.note-colors {
+  display: flex;
+  gap: 4px;
+}
+.color-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.color-dot:hover { transform: scale(1.2); }
+.color-dot.active { border-color: white; }

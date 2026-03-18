@@ -1,0 +1,115 @@
+.pipeline-board {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.phase-group {}
+.phase-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--border-default);
+}
+
+.stages-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.stage-card {
+  padding: 0;
+  overflow: hidden;
+}
+.stage-card.completed {
+  border-left: 3px solid var(--accent-success);
+}
+.stage-card.in-progress {
+  border-left: 3px solid var(--accent-primary);
+}
+
+.stage-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  cursor: pointer;
+  user-select: none;
+}
+.stage-header:hover { background: var(--bg-hover); }
+.stage-name {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+}
+.checklist-progress {
+  font-size: 11px;
+  color: var(--text-placeholder);
+  font-family: var(--font-mono);
+}
+
+.stage-body {
+  padding: 0 var(--space-md) var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  border-top: 1px solid var(--border-default);
+  padding-top: var(--space-md);
+}
+
+.field-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-xs);
+}
+
+.select-sm {
+  padding: 4px 8px;
+  font-size: 12px;
+  width: auto;
+  background: var(--bg-input);
+  color: var(--text-primary);
+}
+
+.stage-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+.check-btn { color: var(--text-secondary); }
+.check-btn .checked { color: var(--accent-success); }
+.checklist-input {
+  flex: 1;
+  padding: 4px 8px;
+  font-size: 13px;
+  background: transparent;
+  border: none;
+}
+.checklist-input:focus {
+  border: none;
+  box-shadow: none;
+  background: var(--bg-input);
+}
+.checklist-input.done {
+  text-decoration: line-through;
+  color: var(--text-placeholder);
+}
+
+.btn-xs {
+  padding: 2px 8px;
+  font-size: 11px;
+}

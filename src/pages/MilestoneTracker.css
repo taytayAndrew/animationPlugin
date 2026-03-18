@@ -1,0 +1,13 @@
+.milestone-tracker { display: flex; flex-direction: column; gap: var(--space-md); }
+.milestone-toolbar { display: flex; align-items: center; justify-content: space-between; }
+.milestone-progress { font-size: 13px; color: var(--text-secondary); }
+.milestone-list { display: flex; flex-direction: column; gap: var(--space-sm); }
+.milestone-item { padding: var(--space-md); display: flex; align-items: flex-start; gap: var(--space-md); }
+.milestone-item.completed { opacity: 0.6; }
+.milestone-item.completed .milestone-title { text-decoration: line-through; }
+.milestone-check { background: none; border: none; color: var(--text-secondary); cursor: pointer; padding: 2px; flex-shrink: 0; }
+.milestone-item.completed .milestone-check { color: var(--accent-success); }
+.milestone-body { flex: 1; display: flex; flex-direction: column; gap: var(--space-sm); }
+.milestone-title { font-weight: 600; }
+.milestone-meta { display: flex; gap: var(--space-sm); }
+.milestone-meta .select-sm { flex: 1; }

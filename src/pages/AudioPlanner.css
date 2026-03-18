@@ -1,0 +1,9 @@
+.audio-planner { display: flex; flex-direction: column; gap: var(--space-md); }
+.audio-tabs { display: flex; gap: 4px; }
+.audio-tabs .btn-ghost.active { color: var(--accent-primary); border-color: var(--accent-primary); }
+.music-section, .sfx-section { display: flex; flex-direction: column; gap: var(--space-md); }
+.music-list, .sfx-list { display: flex; flex-direction: column; gap: var(--space-sm); }
+.music-item, .sfx-item { padding: var(--space-md); display: flex; flex-direction: column; gap: var(--space-sm); }
+.music-row, .sfx-row { display: flex; gap: var(--space-sm); align-items: center; }
+.music-row .input, .sfx-row .input { flex: 1; }
+.sfx-row .select-sm { max-width: 130px; }
